@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Profile | The Leadership Thread</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-bg">
+        <header class="header">
+            <div class="header-left">
+                <img src="logo.png" alt="The Leadership Thread Logo" class="logo">
+                <span class="site-title">THE LEADERSHIP THREAD</span>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+                    <span class="user-name">Dr. John Doe</span>
+                    <span class="user-dropdown">&#9660;</span>
+                </div>
+                <img src="header-icon.png" alt="Header Icon" class="header-icon">
+            </div>
+        </header>
+        <main class="main-content">
+            <form class="profile-form">
+                <h2 class="form-title">Create Your Profile</h2>
+                <div class="form-section">
+                    <label>Your Name</label>
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name" name="firstName" class="input">
+                        <input type="text" placeholder="Last Name" name="lastName" class="input">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label>Contact Details</label>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email" name="email" class="input">
+                        <input type="tel" placeholder="Mobile No" name="mobile" class="input">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label>Select Primary Role:</label>
+                    <div class="form-row">
+                        <select class="input select" name="role">
+                            <optgroup label="Specialist">
+                                <option>Specialist (Partner)</option>
+                                <option>Owner</option>
+                                <option>Partner</option>
+                                <option>Associate</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option>Hygienist</option>
+                                <option>Practice Success Director</option>
+                                <option>Strategic Growth Partner</option>
+                                <option>Treatment Consultant</option>
+                                <option>Custom Role</option>
+                            </optgroup>
+                        </select>
+                        <select class="input select" name="specialty">
+                            <option>Select</option>
+                            <option>Periodontist</option>
+                            <option>Endodontist</option>
+                            <option>Oral Surgeon</option>
+                            <option>Prosthodontist</option>
+                        </select>
+                    </div>
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="producer" name="producer">
+                        <label for="producer" class="checkbox-label">Is this user a producer?</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label>Select Location</label>
+                    <div class="form-row">
+                        <select class="input select" name="location1">
+                            <option>Select</option>
+                        </select>
+                        <select class="input select" name="location2">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
